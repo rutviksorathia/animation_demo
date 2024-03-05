@@ -62,7 +62,7 @@ class HomeView extends StatelessWidget {
                 Expanded(
                   child: PageView(
                     children: const [
-                      FirestPageViewWidget(),
+                      FirstPageViewWidget(),
                       SecondPageView(),
                       ThirdScreenWidget(),
                     ],
@@ -801,8 +801,8 @@ class _BusinessProductHeaderWidget extends ViewModelWidget<HomeViewModel> {
   }
 }
 
-class FirestPageViewWidget extends StatelessWidget {
-  const FirestPageViewWidget({
+class FirstPageViewWidget extends StatelessWidget {
+  const FirstPageViewWidget({
     super.key,
   });
 
