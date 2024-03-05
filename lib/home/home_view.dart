@@ -390,7 +390,7 @@ class ThirdScreenWidget extends ViewModelWidget<HomeViewModel> {
           pinned: true,
           delegate: CustomSliverPersistantHeaderDelegate(
             builder: (shrink) {
-              return _BusinessProductHeaderWidget(
+              return ShrinkHeaderWidget(
                 shrink: shrink,
               );
             },
@@ -602,10 +602,11 @@ class ThirdScreenAnimation extends StatelessWidget {
   }
 }
 
-class _BusinessProductHeaderWidget extends ViewModelWidget<HomeViewModel> {
+class ShrinkHeaderWidget extends ViewModelWidget<HomeViewModel> {
   final double shrink;
 
-  const _BusinessProductHeaderWidget({
+  const ShrinkHeaderWidget({
+    super.key,
     required this.shrink,
   });
 
